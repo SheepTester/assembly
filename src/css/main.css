@@ -30,7 +30,7 @@ textarea {
 .button {
   cursor: pointer;
 }
-.focusable:focus {
+.focus-visible .focusable:focus {
   outline: 1px solid blue;
 }
 

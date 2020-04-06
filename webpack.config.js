@@ -6,7 +6,7 @@ const production = process.env.NODE_ENV === 'production'
 
 module.exports = {
   mode: production ? 'production' : 'development',
-  entry: './src/index.js',
+  entry: './src/index.mjs',
   devtool: production ? 'source-map' : 'inline-source-map',
   devServer: {
     contentBase: '.'
