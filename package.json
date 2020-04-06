@@ -1,0 +1,26 @@
+{
+  "name": "assembly",
+  "version": "1.0.0",
+  "description": "No electronic devices allowed",
+  "main": "\u001b[D\u001b[Csrc/index.js",
+  "scripts": {
+    "build": "NODE_ENV=production webpack --colors",
+    "start": "webpack-dev-server --open --colors",
+    "test": "standard --verbose | snazzy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SheepTester/assembly.git"
+  },
+  "author": "SheepTester",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SheepTester/assembly/issues"
+  },
+  "homepage": "https://github.com/SheepTester/assembly#readme",
+  "devDependencies": {
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  }
+}
