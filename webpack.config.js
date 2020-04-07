@@ -1,4 +1,4 @@
-const TerserJSPlugin = require('terser-webpack-plugin')
+const TerserPlugin = require('terser-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 
@@ -12,8 +12,11 @@ module.exports = {
     contentBase: '.'
   },
   optimization: {
+    minimize: production,
     minimizer: [
-      new TerserJSPlugin(),
+      new TerserPlugin({
+        sourceMap: true
+      }),
       new OptimizeCSSAssetsPlugin()
     ]
   },
