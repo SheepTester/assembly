@@ -14,9 +14,12 @@ resize()
 
 window.requestAnimationFrame(() => {
   const { context: c } = main
-  c.font = '16px "Sans Nouveaux", monospace'
+  c.imageSmoothingEnabled = false
+
   c.fillStyle = '#c57f7f'
   c.fillRect(10, 10, 20, 20)
+
+  c.font = '16px "Sans Nouveaux", monospace'
   c.fillStyle = 'white'
   c.fillText('fij', 0, 40)
 })
