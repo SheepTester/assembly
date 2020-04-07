@@ -30,7 +30,7 @@ export class WrappedCanvas {
 
 export function loadImage (url) {
   return new Promise((resolve, reject) => {
-    const image = new Image()
+    const image = new window.Image()
     image.addEventListener('load', e => {
       resolve(image)
     })

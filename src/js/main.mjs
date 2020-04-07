@@ -26,11 +26,11 @@ export async function main () {
   c.imageSmoothingEnabled = false
   while (true) {
     c.clearRect(0, 0, width, height)
-    const scrollX = Math.cos(now() / 100) * 10
-    const scrollY = Math.sin(now() / 100) * 10
+    const scrollX = Math.cos(now() / 897) * 10
+    const scrollY = Math.sin(now() / 1000) * 10
     for (let x = 0; x < width; x += 32) {
       for (let y = 0; y < height; y += 48) {
-        c.drawImage(headImage, x - scrollX, y - scrollY - Math.abs(Math.sin(3 * (x + y))) * 20, 32, 32)
+        c.drawImage(headImage, x - scrollX, y - scrollY - Math.abs(Math.sin(3 * (x + y))) * 12 - 5, 32, 32)
       }
     }
     for (let x = 0; x < width; x += 32) {
