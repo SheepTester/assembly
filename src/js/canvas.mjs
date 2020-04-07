@@ -27,3 +27,14 @@ export class WrappedCanvas {
     return this
   }
 }
+
+export function loadImage (url) {
+  return new Promise((resolve, reject) => {
+    const image = new Image()
+    image.addEventListener('load', e => {
+      resolve(image)
+    })
+    image.addEventListener('error', reject)
+    image.src = url
+  })
+}
