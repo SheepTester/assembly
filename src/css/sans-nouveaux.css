@@ -1,0 +1,6 @@
+@font-face {
+  font-family: 'Sans Nouveaux';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./static/px_sans_nouveaux.ttf') format('truetype');
+}

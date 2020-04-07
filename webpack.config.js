@@ -34,7 +34,14 @@ module.exports = {
               hmr: !production
             }
           },
-          'css-loader'
+          {
+            loader: 'css-loader',
+            options: {
+              url: false,
+              sourceMap: true,
+              esModule: true
+            }
+          }
         ]
       }
     ]
